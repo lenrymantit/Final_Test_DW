@@ -1,0 +1,23 @@
+/*CSS*/
+* {
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 500px;
+	height: 200px;
+	background: #D3CFCF
+}
+.box{
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	left: 200px;
+	top: 200px;
+	
+}
+.box-1{
+	width: 100px;
+	height: 100px;
+	background: red;
