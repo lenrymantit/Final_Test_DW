@@ -18,7 +18,7 @@
 }
 .container-1{
 	font-family:myFirstFont;
-	width: 1583px;
+	width: 1515px;
 	margin: 0 auto;
 }
 .container-2{
@@ -126,16 +126,16 @@
 }
 .box-1{
 	position: absolute;
-	padding-top: 0px;
+	padding-top: 14px;
 		
 }
 .box-2{
 	position: absolute;
-	padding-top: 174px;
+	padding-top: 183px;
 }
 .box-3{
 	position: absolute;
-	padding-top: 56px;
+	padding-top: 69px;
 }
 .pos-bo{
 	position: absolute;
