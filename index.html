@@ -29,9 +29,12 @@
 				</div>
 				<div class = "col-9 align-center">
 					<div class="tab">
-						<button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+						<!-- <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
 						<button class="tablinks" onclick="openCity(event, 'About')">About</button>
-						<button class="tablinks" onclick="openCity(event, 'Sleep')">Sleep</button>
+						<button class="tablinks" onclick="openCity(event, 'Sleep')">Sleep</button> -->
+						<a class="tablinks active" href="index.html" title="Home">Home</a>
+						<a class="tablinks" href="about.html" title="About">About</a>
+						<a class="tablinks" href="sleep.html" title="Sleep">Sleep</a>
 					  </div>
 				</div>
 			</div>
@@ -48,16 +51,16 @@
 					</div>
 					<div class="col-6">
 						<div class="text-chat">
-							<div class = "text-box">
-								<p>Hi there,<br>How do you feel?</p>
+							<div class = "text-box box0">
+								<div class="out"><div class="in"><p>Hi there,<br>How do you feel?</p></div></div>
 							</div>
-							<div class = "text-box text-right">
-								<p>Hi there,<br>How do you feel?</p>
+							<div class = "text-box text-right box1">
+								<div class="out"><div class="in"><p>Hi there,<br>How do you feel?</p></div></div>
 							</div>
-							<div class = "text-box">
-								<p>Hi there,<br>How do you feel?</p>
+							<div class = "text-box box2">
+								<div class="out"><div class="in"><p>Hi there,<br>How do you feel?</p></div></div>
 							</div>
-							<div class = "text-box-1"><p>Write something here ...</p></div>
+							<div class = "text-box-1 box3"><input type="text" name="firstname" placeholder="Write something here ...";></div>
 						</div> 
 					</div>
 					<div class="col-12 pt11">
@@ -99,56 +102,17 @@
 		</div>
 		</section>
 	</section>
-	<section id="About" class="tabcontent">
-		<section class="bg-star">
-			<div class="container-fluid">
-				<div class="row">
-					<div class = "box-ab">
-						<div class = "box-tr">
-							<p>Headspace is part of Headspace Health, the world’s most accessible, comprehensive provider of mental health and well-being care. Headspace Health also consists of Headspace for Work and Ginger, who partner with over 2,500 companies and health plans to provide access to meditation, mindfulness, coaching, therapy, and psychiatry to their members and employees. Partners include Starbucks, Adobe, Delta Air Lines, ViacomCBS, Cigna, and Kaiser Permanente.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</section>
-	 <section id="Sleep" class="tabcontent">
-		<section class="bg-star">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-10">
-						<div class ="box-sle">
-							<div class = "pic-1">
-								<img src ="Images/sleep.png" alt="">
-							</div>
-							<div class = "pic-2"> 
-								<h1>Fall Asleep</h1>
-								<p>Prepare the mind for sleep</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row justify-center">
-				<div class="col-12">
-					<div class="responsive">
-						<div><img src="Images/3af25400b85f73012a4e.jpg"  alt=""></div>
-						<div><img src="Images/037dd1743e2bf575ac3a.jpg"  alt=""></div>
-						<div><img src="Images/77f5ecf903a6c8f891b7.jpg"  alt=""></div>
-						<div><img src="Images/85aef2ac1ef3d5ad8ce2.jpg"  alt=""></div>
-						<div><img src="Images/50552dadc1f20aac53e3.jpg"  height="300x" alt=""></div>
-						<div><img src="Images/372213d5ff8a34d46d9b.jpg"   height="300x" alt=""></div>
-						<div><img src="Images/790038f1d4ae1ff046bf.jpg"  alt=""></div>
-						<div><img src="Images/bf160718e84723197a56.jpg"  height="300x" alt=""></div>
-					</div>
-				</div>
-				</div>
-			</div>
-			<section class="pd2"></section>
-		</section>
+	
+	<a class="menu-click" href="#"></a>
+	<div class="menu-mobile">
 		
-	</section>
+						
+						<a class="tablinks active" href="index.html" title="Home">Home</a>
+						<a class="tablinks" href="about.html" title="About">About</a>
+						<a class="tablinks" href="sleep.html" title="Sleep">Sleep</a>
+					  <span class="close"></span>
+	</div>
+	 
 	<!-- <script></script> 1 -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" integrity="sha512-h9kKZlwV1xrIcr2LwAPZhjlkx+x62mNwuQK5PAu9d3D+JXMNlGx8akZbqpXvp0vA54rz+DrqYVrzUGDMhwKmwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -161,48 +125,26 @@
 			  speed: 300,
 			  slidesToShow: 1,
 			  adaptiveHeight: true,
-			  arrows:false,
+			  arrows:true,
 			  autoplay:true,
 			});
-			$('.responsive').slick({
-				dots: true,
-				infinite: false,
-				speed: 300,
-				slidesToShow: 4,
-				slidesToScroll: 4,
-				arrows:false,
-			  	autoplay:true,
-				responsive: [
-				  {
-					breakpoint: 1024,
-					settings: {
-					  slidesToShow: 3,
-					  slidesToScroll: 3,
-					  infinite: true,
-					  dots: true
-					}
-				  },
-				  {
-					breakpoint: 600,
-					settings: {
-					  slidesToShow: 2,
-					  slidesToScroll: 2
-					}
-				  },
-				  {
-					breakpoint: 480,
-					settings: {
-					  slidesToShow: 1,
-					  slidesToScroll: 1
-					}
-				  }
-				]
-			  });
+
+			
+
+			$( ".close" ).click(function() {
+				$('.menu-mobile').hide()
+			});
+					
+			$( ".menu-click" ).click(function() {
+				$('.menu-mobile').show()
+			});	
+
+		
 	</script>
 	<script src="JS/lightbox-plus-jquery.js"></script>
 	<script src="JS/lightbox.js"></script>
 	<!-- <script></script> 2 -->
-	<script>
+	<!-- <script>
 		function openCity(evt, cityName) {
 			var i, tabcontent, tablinks;
 			tabcontent = document.getElementsByClassName("tabcontent");
@@ -217,6 +159,6 @@
 			evt.currentTarget.className += " active";
 		}
 		document.getElementById("defaultOpen").click();
-	</script>
+	</script> -->
 </body>
 </html>
